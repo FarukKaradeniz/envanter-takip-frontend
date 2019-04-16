@@ -1,5 +1,5 @@
 .sidebarmenu {
-    width: 15%;
+    width: 20%;
     background: #f0f0f0;
     height: 100%;
 }
@@ -7,4 +7,5 @@
 .sidebarmenu-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }

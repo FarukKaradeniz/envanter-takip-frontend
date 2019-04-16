@@ -6,9 +6,13 @@ import '../styles/SidebarMenuItem.css';
 export default class SidebarMenuItem extends React.Component {
     render() {
         return(
-            <li className="sidebarmenu-item">
-                <Link to={this.props.to}>{this.props.url}</Link>
-            </li>
+            
+                <Link className="menuitem-link" to={this.props.to}>
+                    <li className="sidebarmenu-item">
+                        {this.props.url}
+                    </li>
+                </Link>
+            
         );
     }
 }
