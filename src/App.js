@@ -3,20 +3,39 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import SidebarMenu from './components/SidebarMenu';
 import './App.css';
 import Header from "./components/Header";
+import Anasayfa from './components/AnaSayfa';
+import UrunEkle from './components/UrunEkle';
+import HareketDokumu from './components/HareketDokumu';
+import UrunListe from './components/UrunListe';
+import UrunSatis from './components/UrunSatis';
+import UrunSil from './components/UrunSil';
+
 
 const routes = [
   {
     path: "/",
     exact: true,
-    main: () => <h2 style={{background: "#a2ff4c"}}>Home</h2>
+    main: () => <Anasayfa />
   },
   {
-    path: "/bubblegum",
-    main: () => <h2 style={{background: "#ffab53"}}>Bubblegum</h2>
+    path: "/hareketdokumu",
+    main: () => <HareketDokumu />
   },
   {
-    path: "/shoelaces",
-    main: () => <h2 style={{background: "#6fc2ff"}}>Shoelaces</h2> // Buraya başka bir component gelecek mesela? digerleri gibi
+    path: "/urunekle",
+    main: () =>  <UrunEkle />
+  },
+  {
+    path: "/urunliste",
+    main: () => <UrunListe />
+  },
+  {
+    path: "/urunsil",
+    main: () => <UrunSil />
+  },
+  {
+    path: "/urunsatis",
+    main: () => <UrunSatis />
   }
 ];
 
