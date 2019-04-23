@@ -1,0 +1,7 @@
+.flex-center {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
