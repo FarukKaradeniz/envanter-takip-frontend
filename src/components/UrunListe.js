@@ -110,6 +110,7 @@ class EnhancedTableHead extends React.Component {
     }
 }
 
+//Table head style
 const toolbarStyles = theme => ({
     root: {
         paddingRight: theme.spacing.unit,
@@ -190,12 +191,12 @@ class EnhancedTable extends React.Component {
     state = {
         order: 'asc',
         orderBy: 'id',
-        selected: [],
+        selected: [], //selected datas
         data: [
-            createData('Cupcake', 305, 3.7, 67, 4.3, 1),
+            createData('Cupcake', 305, 3.7, 67, 4.3, 13),
             createData('Donut', 452, 25.0, 51, 4.9, 1),
             createData('Eclair', 262, 16.0, 24, 6.0, 1),
-            createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 1),
+            createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 2),
             createData('Gingerbread', 356, 16.0, 49, 3.9, 1),
             createData('Honeycomb', 408, 3.2, 87, 6.5, 1),
             createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 1),
@@ -306,9 +307,9 @@ class EnhancedTable extends React.Component {
                                             <TableCell>{n.tip}</TableCell>
                                             <TableCell>{n.marka}</TableCell>
                                             <TableCell>{n.model}</TableCell>
-                                            <TableCell align="center">{n.giris}</TableCell>
-                                            <TableCell align="center">{n.son}</TableCell>
-                                            <TableCell align="center">{n.adet}</TableCell>
+                                            <TableCell className={classNames("text-center")}>{n.giris}</TableCell>
+                                            <TableCell className={classNames("text-center")}>{n.son}</TableCell>
+                                            <TableCell className={classNames("text-center")}>{n.adet}</TableCell>
                                         </TableRow>
                                     );
                                 })}
@@ -316,7 +317,7 @@ class EnhancedTable extends React.Component {
                     </Table>
                 </div>
                 <TablePagination
-                    rowsPerPageOptions={[5, 10, 25]}
+                    rowsPerPageOptions={[5]}
                     component="div"
                     count={data.length}
                     rowsPerPage={rowsPerPage}
@@ -335,15 +336,5 @@ class EnhancedTable extends React.Component {
     }
 }
 
-// // export default class UrunListe extends React.Component {
-// //     teas = withStyles(styles)(EnhancedTable);
-// //
-// //     render() {
-// //         return(
-// //             <div>
-// //             </div>
-// //         );
-// //     }
-// }
 
 export default withStyles(styles)(EnhancedTable);
