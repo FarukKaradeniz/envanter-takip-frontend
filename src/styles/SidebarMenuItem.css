@@ -1,8 +1,25 @@
 .sidebarmenu-item {
-    background-color: rgb(228, 255, 255);
+    background: rgba(226, 226, 226, 1);
+    background: -moz-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(20%, rgba(219, 219, 219, 1)), color-stop(50%, rgba(219, 219, 219, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#ffffff', GradientType=1);
     padding: 10px;
-    border-bottom: 1px solid gray;
     box-sizing: content-box;
+}
+
+.sidebarmenu-item:hover {
+    background: rgba(226, 226, 226, 1);
+    background: -moz-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 70%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(226, 226, 226, 1)), color-stop(20%, rgba(219, 219, 219, 1)), color-stop(70%, rgba(219, 219, 219, 1)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 70%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 70%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 70%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(226, 226, 226, 1) 0%, rgba(219, 219, 219, 1) 20%, rgba(219, 219, 219, 1) 70%, rgba(255, 255, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e2e2e2', endColorstr='#ffffff', GradientType=1);
 }
 
 .menuitem-link {
