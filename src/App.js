@@ -8,6 +8,7 @@ import UrunEkle from './components/UrunEkle';
 import HareketDokumu from './components/HareketDokumu';
 import UrunListe from './components/UrunListe';
 import UrunSatis from './components/UrunSatis';
+import UrunKayitEkle from "./components/UrunKayitEkle";
 
 
 const routes = [
@@ -24,6 +25,10 @@ const routes = [
     path: "/urunekle",
     main: () =>  <UrunEkle />
   },
+    {
+        path: "/urunkayitekle",
+        main: () => <UrunKayitEkle/>
+    },
   {
     path: "/urunliste",
     main: () => <UrunListe />
