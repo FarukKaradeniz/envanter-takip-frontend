@@ -53,7 +53,7 @@ class UrunEkle extends React.Component {
                         required
                         label="Ürün Tipi"
                         className={classes.textField}
-                        value={this.state.name}
+                        value={this.state.tip}
                         onChange={this.handleChange('tip')}
                         margin="normal"
                         variant="outlined"
@@ -77,7 +77,7 @@ class UrunEkle extends React.Component {
                         variant="outlined"
                     />
                     <Button type={"submit"} variant="contained" color="primary" className={classes.button}>
-                        Primary
+                        Submit
                     </Button>
                 </form>
             </div>
