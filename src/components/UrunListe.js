@@ -176,7 +176,7 @@ EnhancedTableToolbar = withStyles(toolbarStyles)(EnhancedTableToolbar);
 
 const styles = theme => ({
     root: {
-        width: '100%',
+        width: '85%',
         marginTop: theme.spacing.unit * 3,
     },
     table: {

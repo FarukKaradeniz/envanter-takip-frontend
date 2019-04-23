@@ -4,9 +4,7 @@
     <list default="true" id="1bcaf4b6-25d0-4822-9505-ab023e8d6c1b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UrunEkle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UrunEkle.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/UrunListe.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UrunListe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/UrunKayitEkle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/UrunKayitEkle.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,8 +20,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/UrunEkle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+            <state relative-caret-position="221">
+              <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -208,7 +206,7 @@
       <workItem from="1555967681477" duration="242000" />
       <workItem from="1555968203366" duration="130000" />
       <workItem from="1555970807447" duration="912000" />
-      <workItem from="1556023152345" duration="4626000" />
+      <workItem from="1556023152345" duration="4873000" />
     </task>
     <task id="LOCAL-00001" summary="new dependencies added">
       <created>1555527113032</created>
@@ -252,11 +250,18 @@
       <option name="project" value="LOCAL" />
       <updated>1556029218163</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="UrunKayitEkle component functionality added">
+      <created>1556030810442</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1556030810442</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13480000" />
+    <option name="totallyTimeSpent" value="13727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -333,7 +338,8 @@
     <MESSAGE value="UrunSil component removed" />
     <MESSAGE value="UrunListe component updated" />
     <MESSAGE value="UrunKayitEkle component added" />
-    <option name="LAST_COMMIT_MESSAGE" value="UrunKayitEkle component added" />
+    <MESSAGE value="UrunKayitEkle component functionality added" />
+    <option name="LAST_COMMIT_MESSAGE" value="UrunKayitEkle component functionality added" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -488,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UrunEkle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="39" column="6" selection-start-line="39" selection-start-column="6" selection-end-line="39" selection-end-column="6" />
+        <state relative-caret-position="221">
+          <caret line="39" column="66" selection-start-line="39" selection-start-column="66" selection-end-line="39" selection-end-column="66" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
