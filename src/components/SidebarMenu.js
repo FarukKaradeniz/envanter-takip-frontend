@@ -13,7 +13,6 @@ export default class SidebarMenu extends React.Component{
                     <SidebarMenuItem to={"/hareketdokumu"} url={"Hareket Dökümü"}/>
                     <SidebarMenuItem to={"/urunekle"} url={"Ürün Ekle"}/>
                     <SidebarMenuItem to={"/urunliste"} url={"Ürün Liste"}/>
-                    <SidebarMenuItem to={"/urunsil"} url={"Ürün Sil"}/>
                     <SidebarMenuItem to={"/urunsatis"} url={"Ürün Satış"}/>
                 </ul>
             </div>

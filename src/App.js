@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route} from "react-router-dom";
 import SidebarMenu from './components/SidebarMenu';
 import './App.css';
 import Header from "./components/Header";
@@ -8,7 +8,6 @@ import UrunEkle from './components/UrunEkle';
 import HareketDokumu from './components/HareketDokumu';
 import UrunListe from './components/UrunListe';
 import UrunSatis from './components/UrunSatis';
-import UrunSil from './components/UrunSil';
 
 
 const routes = [
@@ -28,10 +27,6 @@ const routes = [
   {
     path: "/urunliste",
     main: () => <UrunListe />
-  },
-  {
-    path: "/urunsil",
-    main: () => <UrunSil />
   },
   {
     path: "/urunsatis",
