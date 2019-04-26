@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 .header {
     height: 45px;
     width: 100%;
@@ -9,4 +11,11 @@
     background: -ms-linear-gradient(-45deg, rgba(179, 220, 237, 1) 0%, rgba(41, 184, 229, 1) 0%, rgba(188, 224, 238, 1) 100%);
     background: linear-gradient(135deg, rgba(179, 220, 237, 1) 0%, rgba(41, 184, 229, 1) 0%, rgba(188, 224, 238, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3dced', endColorstr='#bce0ee', GradientType=1);
+}
+
+.header-text {
+    margin: 0;
+    padding-left: 20px;
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
 }
