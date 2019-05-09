@@ -43,7 +43,7 @@ class UrunKayitEkle extends React.Component {
 
     componentWillMount = () => {
         //todo burada urunler icin istek yapilacak ve ürün tipi listesi dönüşü yapilacak
-    }
+    };
 
     handleChange = name => event => {
         this.setState({
