@@ -16,6 +16,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Tooltip from '@material-ui/core/Tooltip';
 import DeleteIcon from '@material-ui/icons/Delete';
 import {lighten} from '@material-ui/core/styles/colorManipulator';
+import Axios from 'axios';
 
 import '../styles/UrunListe.css';
 
@@ -192,21 +193,7 @@ class EnhancedTable extends React.Component {
         order: 'asc',
         orderBy: 'id',
         selected: [], //selected datas
-        data: [
-            createData('Cupcake', 305, 3.7, 67, 4.3, 13),
-            createData('Donut', 452, 25.0, 51, 4.9, 1),
-            createData('Eclair', 262, 16.0, 24, 6.0, 1),
-            createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 2),
-            createData('Gingerbread', 356, 16.0, 49, 3.9, 1),
-            createData('Honeycomb', 408, 3.2, 87, 6.5, 1),
-            createData('Ice cream sandwich', 237, 9.0, 37, 4.3, 1),
-            createData('Jelly Bean', 375, 0.0, 94, 0.0, 1),
-            createData('KitKat', 518, 26.0, 65, 7.0, 1),
-            createData('Lollipop', 392, 0.2, 98, 0.0, 1),
-            createData('Marshmallow', 318, 0, 81, 2.0, 1),
-            createData('Nougat', 360, 19.0, 9, 37.0, 1),
-            createData('Oreo', 437, 18.0, 63, 4.0, 1),
-        ],
+        data: [],
         page: 0,
         rowsPerPage: 5,
     };
@@ -262,7 +249,65 @@ class EnhancedTable extends React.Component {
     deleteClicked = () => {
         console.log(this.state.selected);
         //TODO burada silme işlemi database'e gönderilecek ve state güncellenecek
+        Axios({
+            method: 'post',
+            url: 'http://localhost:3000/urunsil',
+            data: {
+                sil: this.state.selected,
+            }
+        }).then(response => {
+            // if (response.status < 300) {
+            let data = this.state.data;
+            let selected = this.state.selected;
+            let newData = [];
+            data.forEach(d => {
+                let bool = false;
+                selected.forEach(s => {
+                    if (s === d.id) {
+                        bool = true;
+                    }
+                });
+                if (!bool) {
+                    newData.push(d);
+                }
+            });
+            console.log(newData);
+            this.setState({
+                data: newData,
+                selected: [],
+            });
+            // }
+        }).catch(err => {
+            console.log(err);
+        });
     };
+
+    componentWillMount() {
+        // TODO burada urunliste'ye istek yapilacak ve state'deki data kısmı güncellenecek
+        let newData = [];
+        newData.push(
+            createData('Cupcake', 305, 3.7, 67, 4.3, 13),
+            createData('Donut', 452, 25.0, 51, 4.9, 1),
+            createData('Eclair', 262, 16.0, 24, 6.0, 1),
+            createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 2));
+        this.setState({data: newData});
+        Axios({
+            method: 'get',
+            url: 'http://localhost:3000',
+        }).then(response => {
+            // response.data.forEach(data => {
+            //     let item = createData(data.tip, data.marka, data.model, data.giris, data.sonkullanma, data.adet);
+            //     newData.push(item);
+            // });
+            // this.setState({
+            //     data: newData,
+            //     selected: [],
+            // });
+            console.log(response);
+        }).catch((err) => {
+            console.log(err)
+        });
+    }
 
     isSelected = id => this.state.selected.indexOf(id) !== -1;
 
