@@ -21,10 +21,9 @@ import Axios from 'axios';
 import '../styles/UrunListe.css';
 
 
-let counter = 0;
-function createData(tip, marka, model, giris, son, adet) {
-    counter += 1;
-    return { id: counter, tip, marka, model, giris, son, adet};
+function createData(id, tip, marka, model, giris, son, adet) {
+
+    return {id, tip, marka, model, giris, son, adet};
 }
 // üstteki kısım prod'a geçince kaldırılacak
 
@@ -285,24 +284,18 @@ class EnhancedTable extends React.Component {
     componentWillMount() {
         // TODO burada urunliste'ye istek yapilacak ve state'deki data kısmı güncellenecek
         let newData = [];
-        newData.push(
-            createData('Cupcake', 305, 3.7, 67, 4.3, 13),
-            createData('Donut', 452, 25.0, 51, 4.9, 1),
-            createData('Eclair', 262, 16.0, 24, 6.0, 1),
-            createData('Frozen yoghurt', 159, 6.0, 24, 4.0, 2));
-        this.setState({data: newData});
         Axios({
             method: 'get',
-            url: 'http://localhost:3000',
+            url: 'http://localhost:3000/urunliste',
         }).then(response => {
-            // response.data.forEach(data => {
-            //     let item = createData(data.tip, data.marka, data.model, data.giris, data.sonkullanma, data.adet);
-            //     newData.push(item);
-            // });
-            // this.setState({
-            //     data: newData,
-            //     selected: [],
-            // });
+            response.data.forEach(data => {
+                let item = createData(data.id, data.tip, data.marka, data.model, data.giris, data.sonkullanma, data.adet);
+                newData.push(item);
+            });
+            this.setState({
+                data: newData,
+                selected: [],
+            });
             console.log(response);
         }).catch((err) => {
             console.log(err)

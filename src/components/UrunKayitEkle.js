@@ -6,6 +6,8 @@ import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "@material-ui/core/Button";
 import MenuItem from "@material-ui/core/MenuItem";
 
+import Axios from 'axios';
+
 const styles = theme => ({
     container: {
         display: 'flex',
@@ -28,21 +30,27 @@ class UrunKayitEkle extends React.Component {
         giris: '',
         sonkullanma: '',
         adet: '',
-        urunler: [
-            {
-                value: 1,
-                label: "Telefon"
-            },
-            {
-                value: 2,
-                label: "Araba"
-            }
-        ],
-        secilen: 1,
+        urunler: [],
+        secilen: 0,
     };
 
     componentWillMount = () => {
         //todo burada urunler icin istek yapilacak ve ürün tipi listesi dönüşü yapilacak
+        Axios({
+            method: 'get',
+            url: 'http://localhost:3000/urunliste'
+        }).then(response => {
+            let data = response.data;
+            let newd = [];
+            data.forEach(d => newd.push({value: d.id, label: d.tip}))
+            newd = new Set(newd);
+            this.setState({
+                urunler: newd,
+            });
+
+        }).catch(err => {
+            console.log(err);
+        })
     };
 
     handleChange = name => event => {
@@ -54,6 +62,23 @@ class UrunKayitEkle extends React.Component {
     onFormSubmit = event => {
         event.preventDefault();
         //TODO burada sunucuya urun kayit adresine istek yapacak
+        if (this.state.sonkullanma !== '' && this.state.giris !== '') {
+            //TODO burada sunucuya urun tanimla adresine istek yapacak
+            Axios({
+                method: 'post',
+                url: 'http://localhost:3000/urunkayitekle',
+                data: {
+                    giris: this.state.giris,
+                    sonkullanma: this.state.sonkullanma,
+                    adet: this.state.adet,
+                    secilen: this.state.secilen,
+                }
+            }).then(response => {
+
+            }).catch(err => console.log(err));
+        } else {
+            alert("Formu göndermeden önce giriş tarihi ve son kullanmayı giriniz.");
+        }
         console.log(`${this.state.giris}, ${this.state.sonkullanma}, ${this.state.adet}, ${this.state.secilen}`);
     };
 
