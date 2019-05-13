@@ -5,6 +5,8 @@ import TextField from "@material-ui/core/TextField";
 import withStyles from "@material-ui/core/styles/withStyles";
 import Button from "@material-ui/core/Button";
 
+import Axios from 'axios';
+
 const styles = theme => ({
     container: {
         display: 'flex',
@@ -37,7 +39,24 @@ class UrunEkle extends React.Component {
 
     onFormSubmit = event => {
         event.preventDefault();
-        //TODO burada sunucuya urun tanimla adresine istek yapacak
+        if (this.state.tip !== '') {
+            //TODO burada sunucuya urun tanimla adresine istek yapacak
+            Axios({
+                method: 'post',
+                url: 'http://localhost:3000/urunekle',
+                data: {
+                    tip: this.state.tip,
+                    marka: this.state.marka,
+                    model: this.state.model,
+                }
+            }).then(response => {
+
+            }).catch(err => console.log(err));
+        } else {
+            alert("Formu göndermeden önce ürün tipini giriniz.");
+        }
+
+
         console.log(`${this.state.tip}, ${this.state.marka}, ${this.state.model}`);
     };
 
