@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1bcaf4b6-25d0-4822-9505-ab023e8d6c1b" name="Default Changelist" comment="">
+    <list default="true" id="1bcaf4b6-25d0-4822-9505-ab023e8d6c1b" name="Default Changelist" comment="Ürün ekle güncellendi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UrunKayitEkle.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UrunKayitEkle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/UrunSatis.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UrunSatis.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/HareketDokumu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/HareketDokumu.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -21,38 +19,24 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/UrunListe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+            <state relative-caret-position="51">
+              <caret line="23" selection-start-line="23" selection-end-line="26" selection-end-column="1" />
               <folding>
+                <element signature="e#0#26#0" expanded="true" />
                 <element signature="n#!!block;n#desc#0" />
                 <element signature="n#!!block;n#stableSort#0" />
                 <element signature="n#!!block;n#getSorting#0" />
-                <element signature="e#1778#2324#0" />
                 <element signature="n#EnhancedTableHead#0" />
-                <element signature="e#4379#4964#0" />
-                <element signature="e#5004#6129#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/HareketDokumu.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/UrunSatis.js">
+        <entry file="file://$PROJECT_DIR$/src/components/HareketDokumu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="274">
-              <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+            <state relative-caret-position="221">
+              <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -89,17 +73,17 @@
         <option value="$PROJECT_DIR$/src/components/SidebarMenu.js" />
         <option value="$PROJECT_DIR$/src/styles/UrunKayitEkle.css" />
         <option value="$PROJECT_DIR$/src/styles/UrunEkle.css" />
-        <option value="$PROJECT_DIR$/src/components/UrunListe.js" />
-        <option value="$PROJECT_DIR$/src/components/UrunEkle.js" />
         <option value="$PROJECT_DIR$/src/components/AnaSayfa.js" />
         <option value="$PROJECT_DIR$/src/styles/SidebarMenu.css" />
         <option value="$PROJECT_DIR$/src/styles/SidebarMenuItem.css" />
         <option value="$PROJECT_DIR$/src/components/Header.js" />
         <option value="$PROJECT_DIR$/src/styles/Header.css" />
-        <option value="$PROJECT_DIR$/src/components/HareketDokumu.js" />
         <option value="$PROJECT_DIR$/src/App.css" />
-        <option value="$PROJECT_DIR$/src/components/UrunKayitEkle.js" />
+        <option value="$PROJECT_DIR$/src/components/UrunEkle.js" />
         <option value="$PROJECT_DIR$/src/components/UrunSatis.js" />
+        <option value="$PROJECT_DIR$/src/components/UrunListe.js" />
+        <option value="$PROJECT_DIR$/src/components/UrunKayitEkle.js" />
+        <option value="$PROJECT_DIR$/src/components/HareketDokumu.js" />
       </list>
     </option>
   </component>
@@ -214,7 +198,10 @@
       <workItem from="1556298285476" duration="378000" />
       <workItem from="1556303689126" duration="2213000" />
       <workItem from="1557405249501" duration="218000" />
-      <workItem from="1557405627008" duration="1505000" />
+      <workItem from="1557405627008" duration="4014000" />
+      <workItem from="1557597501384" duration="4446000" />
+      <workItem from="1557667199594" duration="614000" />
+      <workItem from="1557740624663" duration="8550000" />
     </task>
     <task id="LOCAL-00001" summary="new dependencies added">
       <created>1555527113032</created>
@@ -314,11 +301,46 @@
       <option name="project" value="LOCAL" />
       <updated>1556305657327</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Ürün Satış updated">
+      <created>1557408285902</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1557408285902</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Ürün liste güncellendi">
+      <created>1557745243266</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1557745243266</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Ürün ekle güncellendi">
+      <created>1557745731537</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1557745731538</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Ürün ekle güncellendi">
+      <created>1557746560013</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1557746560013</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Ürün kayıt güncellendi">
+      <created>1557754265512</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1557754265512</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22982000" />
+    <option name="totallyTimeSpent" value="39101000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -337,7 +359,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.40589198" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.40261865" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" visible="true" weight="0.3289689" />
@@ -403,14 +425,15 @@
     <MESSAGE value="ui updates - changing backgroud for header, sidebar" />
     <MESSAGE value="HareketDokumu component template done" />
     <MESSAGE value="Header updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Header updated" />
+    <MESSAGE value="Ürün Satış updated" />
+    <MESSAGE value="Ürün liste güncellendi" />
+    <MESSAGE value="Ürün ekle güncellendi" />
+    <MESSAGE value="Ürün kayıt güncellendi" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ürün kayıt güncellendi" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -511,22 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UrunListe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="n#!!block;n#desc#0" />
-            <element signature="n#!!block;n#stableSort#0" />
-            <element signature="n#!!block;n#getSorting#0" />
-            <element signature="e#1778#2324#0" />
-            <element signature="n#EnhancedTableHead#0" />
-            <element signature="e#4379#4964#0" />
-            <element signature="e#5004#6129#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -544,10 +551,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/HareketDokumu.js">
+    <entry file="file://$PROJECT_DIR$/src/styles/Header.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
+        <state relative-caret-position="255">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/UrunSatis.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="52" column="59" selection-start-line="52" selection-start-column="59" selection-end-line="52" selection-end-column="59" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -556,32 +573,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/UrunEkle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="7" selection-start-line="7" selection-end-line="87" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UrunKayitEkle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
+        <state relative-caret-position="374">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="56" selection-end-column="9" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/Header.css">
+    <entry file="file://$PROJECT_DIR$/src/components/UrunKayitEkle.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        <state relative-caret-position="949">
+          <caret line="79" column="57" selection-start-line="79" selection-start-column="57" selection-end-line="79" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/UrunSatis.js">
+    <entry file="file://$PROJECT_DIR$/src/components/UrunListe.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="64" column="57" selection-start-line="64" selection-start-column="57" selection-end-line="64" selection-end-column="57" />
+        <state relative-caret-position="51">
+          <caret line="23" selection-start-line="23" selection-end-line="26" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="n#!!block;n#desc#0" />
+            <element signature="n#!!block;n#stableSort#0" />
+            <element signature="n#!!block;n#getSorting#0" />
+            <element signature="n#EnhancedTableHead#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/HareketDokumu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="42" column="30" selection-start-line="42" selection-start-column="30" selection-end-line="42" selection-end-column="30" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
