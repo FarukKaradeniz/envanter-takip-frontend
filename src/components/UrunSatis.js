@@ -4,6 +4,7 @@ import '../styles/UrunSatis.css';
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
 import withStyles from "@material-ui/core/styles/withStyles";
+import Axios from 'axios';
 
 const styles = theme => ({
     container: {
@@ -36,7 +37,21 @@ class UrunSatis extends React.Component {
 
     onFormSubmit = event => {
         event.preventDefault();
-        //TODO burada sunucuya urun tanimla adresine istek yapacak
+        //TODO burada sunucuya urunsatis adresine istek yapacak
+        if (this.state.id !== '' && this.state.adet !== '') {
+            Axios({
+                method: 'post',
+                url: 'http://localhost:3000/urunsatis',
+                data: {
+                    id: this.state.id,
+                    adet: this.state.adet,
+                }
+            }).then(response => {
+
+            }).catch(err => console.log(err));
+        } else {
+            alert("Lütfen ID ve Adet değerlerini giriniz");
+        }
         console.log(`${this.state.id}, ${this.state.adet}`);
     };
 
